@@ -5,7 +5,7 @@ Static guest information page for Shawn and Wendy, 28 November 2026. Open index.
 ## Requirements
 
 - Replace RSVP with a mobile-friendly guide; no guest data collection or form submissions.
-- Keep existing rose/cream styling, couple photos and a neutral photo-sharing prototype comparison.
+- Keep existing rose/cream styling, couple photos and Guestpix photo sharing.
 - Show date, guest programme, venue information, directions and parking.
 - No dress code section.
 - Use only guest-facing events; omit preparations, vendor tasks, wedding party duties, private addresses and game mechanics.
@@ -54,6 +54,6 @@ Hi [name]! Our wedding is next Saturday, 28 November. For your tea ceremony, ple
 
 email.html and google-apps-script.js are retained as historical RSVP assets. The live index.html and script.js no longer use the RSVP endpoint. Existing external Apps Script deployments or stored responses have not been altered.
 
-## Photo-sharing prototype
+## Photo sharing
 
-GuestPix, Kululu, Google Photos, Wedibox and Warpbin each have a named card with the supplied QR image and destination URL. Provider cards are stacked in one column on all screen sizes. Wedibox has a dedicated full-width section with its introduction, QR code and external link above the embedded gallery. The iframe has a 760px minimum height (900px on phones) and accepts content resize messages only from the mounted Wedibox frame and its exact origin. Feedback is collected through existing chats.
+Guestpix is the selected wedding photo-sharing platform. The page uses the existing resources/qrcode/guestpix.jpeg QR image and supplied Guestpix album URL, with a direct link for guests browsing on their phones. Other trial providers and the Wedibox embed have been removed from the page. The QR and direct link work without JavaScript.

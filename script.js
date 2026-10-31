@@ -140,16 +140,3 @@ function revealFamilySection() {
 }
 revealFamilySection();
 window.addEventListener('hashchange', revealFamilySection);
-
-// The widget loader compares message origins with a URL containing /w.
-// Accept its resize messages using the actual origin and mounted frame source.
-window.addEventListener('message', (event) => {
-    if (event.origin !== 'https://www.wedibox.com') return;
-    const frame = document.querySelector('#wedibox-embed iframe');
-    if (!frame || event.source !== frame.contentWindow) return;
-    const data = event.data;
-    if (!data || data.type !== 'WEDIBOX_WIDGET_RESIZE') return;
-    const height = data.payload?.height;
-    if (typeof height !== 'number' || !Number.isFinite(height) || height < 320) return;
-    frame.style.height = `${Math.ceil(height)}px`;
-});

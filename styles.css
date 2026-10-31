@@ -928,18 +928,6 @@ footer span { display: block; font-size: 13px; margin-top: 8px; }
 .photo-options-feedback p { max-width: 620px; margin: 12px auto 0; }
 
 
-/* Give the embedded gallery the full content width, outside the provider cards. */
-.events-section.wedibox-section { padding: 32px 12px 12px; }
-.wedibox-intro { text-align: center; padding: 0 12px 28px; }
-.wedibox-intro .photo-option-qr { margin: 0 auto 20px; }
-.wedibox-intro .photo-option-link { display: inline-block; }
-/* Override the widget's inline 320px minimum; reported content height can grow further. */
-#wedibox-embed iframe { min-height: 760px !important; width: 100%; }
-@media (max-width: 700px) {
-    .events-section.wedibox-section { padding: 28px 6px 6px; }
-    #wedibox-embed iframe { min-height: 900px !important; }
-}
-
 /* Quiet carousel controls, outside the photograph. */
 .carousel-caption { display: flex; align-items: center; justify-content: center; gap: 16px; margin: 8px auto 0; color: var(--deep-rose); font-size: 12px; font-variant-numeric: tabular-nums; }
 #carouselPause { border: 0; background: transparent; color: inherit; font: inherit; padding: 12px 8px; min-height: 44px; cursor: pointer; }
