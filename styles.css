@@ -80,6 +80,14 @@ body {
     margin-bottom: 30px;
 }
 
+.hero-date sup {
+    font-size: 0.6em;
+    line-height: 0;
+    vertical-align: super;
+    text-transform: lowercase;
+    letter-spacing: 0;
+}
+
 .hero-divider {
     width: 80px;
     height: 2px;
