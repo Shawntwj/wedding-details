@@ -21,6 +21,8 @@ Each celebration combines its programme with the supplied venue address, respons
 
 The dinner travel section includes a portrait video guide outside the parking accordion. `resources/video/carpark-to-ballroom.mp4` is a 62-second, 720p H.264/AAC web copy (17.3 MB / 16.5 MiB), with fast-start metadata for streaming. Keep the original recording outside the repository. A lazy-loaded 39 KB JPEG provides the preview; JavaScript attaches the MP4 source only after a guest presses Watch. Native controls support playback and fullscreen, and the Open video link also works without JavaScript. The player reserves its portrait dimensions to avoid layout shifts.
 
+The stylesheet and script URLs in `index.html` include a `?v=` version (the first 12 characters of the file's SHA-256 hash). Update the corresponding version whenever either file changes, so returning guests receive the matching assets rather than a cached previous version. The video preview also has an inline responsive width limit to prevent overflow if the stylesheet is unavailable.
+
 The hotel travel link points to its official location information: https://www.panpacific.com/en/hotels-and-resorts/pp-marina/the-hotel.html
 
 ## Reminder plan
