@@ -1,5 +1,5 @@
 const CONFIG = {
-    CAROUSEL_INTERVAL: 8000,
+    CAROUSEL_INTERVAL: 4000,
     CAROUSEL_IMAGES_PATH: 'resources/img/',
     MAX_IMAGE_COUNT: 22,
 };
@@ -140,3 +140,36 @@ function revealFamilySection() {
 }
 revealFamilySection();
 window.addEventListener('hashchange', revealFamilySection);
+
+// Keep the MP4 URL off the player until a guest explicitly chooses to watch.
+// The direct link also works when JavaScript is unavailable.
+const ballroomGuide = document.getElementById('ballroom-guide');
+if (ballroomGuide) {
+    const playButton = ballroomGuide.querySelector('.video-guide-play');
+    const preview = ballroomGuide.querySelector('.video-guide-preview');
+    const video = ballroomGuide.querySelector('video');
+    const status = ballroomGuide.querySelector('.video-guide-status');
+    playButton.hidden = false;
+
+    video.addEventListener('error', () => {
+        status.textContent = 'Unable to play the guide here. Please try the Open video link below.';
+        status.hidden = false;
+    });
+
+    playButton.addEventListener('click', async () => {
+        video.poster = preview.src;
+        video.src = ballroomGuide.querySelector('.video-guide-link').href;
+        video.hidden = false;
+        preview.hidden = true;
+        playButton.hidden = true;
+        video.focus();
+        try {
+            await video.play();
+        } catch {
+            status.textContent = video.error
+                ? 'Unable to play the guide here. Please try the Open video link below.'
+                : 'Tap play on the video, or use the Open video link below.';
+            status.hidden = false;
+        }
+    }, { once: true });
+}

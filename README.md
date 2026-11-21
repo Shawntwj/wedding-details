@@ -19,6 +19,8 @@ Confirm parking/drop-off, dinner reception/seating time, dinner finish time, hot
 
 Each celebration combines its programme with the supplied venue address, responsive Google Maps embed and directions link. Church: Zion Presbyterian Church, 535 Upper Changi Rd, Singapore 486975. Dinner: Pan Pacific Singapore, 7 Raffles Blvd, Singapore 039595. Parking details are expandable. The share-generated map embeds require no API key.
 
+The dinner travel section includes a portrait video guide outside the parking accordion. `resources/video/carpark-to-ballroom.mp4` is a 62-second, 720p H.264/AAC web copy (17.3 MB / 16.5 MiB), with fast-start metadata for streaming. Keep the original recording outside the repository. A lazy-loaded 39 KB JPEG provides the preview; JavaScript attaches the MP4 source only after a guest presses Watch. Native controls support playback and fullscreen, and the Open video link also works without JavaScript. The player reserves its portrait dimensions to avoid layout shifts.
+
 The hotel travel link points to its official location information: https://www.panpacific.com/en/hotels-and-resorts/pp-marina/the-hotel.html
 
 ## Reminder plan
