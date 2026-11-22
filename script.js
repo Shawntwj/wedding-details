@@ -133,14 +133,6 @@ const Carousel = {
 
 document.addEventListener('DOMContentLoaded', () => Carousel.init());
 
-function revealFamilySection() {
-    if (window.location.hash === '#family') {
-        document.getElementById('family-details').open = true;
-    }
-}
-revealFamilySection();
-window.addEventListener('hashchange', revealFamilySection);
-
 // Keep the MP4 URL off the player until a guest explicitly chooses to watch.
 // The direct link also works when JavaScript is unavailable.
 const ballroomGuide = document.getElementById('ballroom-guide');

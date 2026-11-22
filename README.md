@@ -10,7 +10,7 @@ Static guest information page for Shawn and Wendy, 28 November 2026. Open index.
 - No dress code section.
 - Use only guest-facing events; omit preparations, vendor tasks, wedding party duties, private addresses and game mechanics.
 - Clearly label provisional timings and missing logistics. Do not infer guest arrival from staff setup times.
-- Friends use the main link; relatives use the same link with #family to open tea timings. This is a convenience, not access control.
+- All guests use the main link. Tea ceremony timings are shared privately with relatives and are not shown on the page.
 - All core programme information works without JavaScript.
 
 ## Before sending to guests
@@ -44,7 +44,7 @@ Hi [name]! One month to our wedding on Saturday, 28 November! We can't wait to c
 
 ### One month / family
 
-Hi [name]! Looking forward to celebrating with you on Saturday, 28 November. Your tea ceremony is planned for [time] at [venue]. We'll share the exact meeting point and arrival time privately. Our wedding programme is here: [link]#family. Please let us know if you need help arranging transport. Love, Shawn & Wendy
+Hi [name]! Looking forward to celebrating with you on Saturday, 28 November. Your tea ceremony is planned for [time] at [venue]. We'll share the exact meeting point and arrival time privately. Our wedding programme is here: [link]. Please let us know if you need help arranging transport. Love, Shawn & Wendy
 
 ### One week / friends
 
@@ -52,7 +52,7 @@ Hi [name]! See you next Saturday, 28 November! Please arrive at [confirmed arriv
 
 ### One week / family
 
-Hi [name]! Our wedding is next Saturday, 28 November. For your tea ceremony, please meet at [exact meeting point] by [confirmed arrival time]; your ceremony is at [time]. Directions and parking: [confirmed instructions]. Your day's programme: [link]#family. For help on the day: [confirmed contact]. See you soon! Shawn & Wendy
+Hi [name]! Our wedding is next Saturday, 28 November. For your tea ceremony, please meet at [exact meeting point] by [confirmed arrival time]; your ceremony is at [time]. Directions and parking: [confirmed instructions]. Your day's programme: [link]. For help on the day: [confirmed contact]. See you soon! Shawn & Wendy
 
 ## Legacy files
 
