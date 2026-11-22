@@ -137,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => Carousel.init());
 // The direct link also works when JavaScript is unavailable.
 const ballroomGuide = document.getElementById('ballroom-guide');
 if (ballroomGuide) {
+    const media = ballroomGuide.querySelector('.video-guide-media');
     const playButton = ballroomGuide.querySelector('.video-guide-play');
     const preview = ballroomGuide.querySelector('.video-guide-preview');
     const video = ballroomGuide.querySelector('video');
@@ -149,6 +150,7 @@ if (ballroomGuide) {
     });
 
     playButton.addEventListener('click', async () => {
+        media.classList.add('is-expanded');
         video.poster = preview.src;
         video.src = ballroomGuide.querySelector('.video-guide-link').href;
         video.hidden = false;
