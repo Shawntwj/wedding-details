@@ -890,9 +890,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .venue-travel h4 { margin-top: 0; }
 .venue-address { font-size: 14px; color: var(--text-light); margin-bottom: 16px; }
 .venue-map { display: block; width: 100%; height: 280px; border: 0; border-radius: 8px; background: var(--cream); }
-.parking-details { font-size: 14px; }
-.parking-details p { margin: 12px 0 0; }
-.video-guide { margin-top: 24px; padding: 18px; border: 1px solid var(--border); border-radius: 12px; background: var(--cream); }
+.travel-card, .video-guide { margin-top: 24px; padding: 18px; border: 1px solid var(--border); border-radius: 12px; background: var(--cream); }
+.travel-card > p { margin: 12px 0 0; font-size: 14px; }
+.travel-card > :last-child { margin-bottom: 0; }
+.travel-card .recommended-route { font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.travel-card .transport-notes li + li { margin-top: 8px; }
 .video-guide > p { margin: 10px 0 16px; }
 .video-guide-parking { font-size: 14px; color: var(--text-light); }
 .video-guide-parking strong { display: block; color: var(--text); margin-bottom: 4px; }
