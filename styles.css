@@ -917,6 +917,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .schedule p, .small-note { font-size: 14px; color: var(--text-light); }
 .small-note { margin-top: 16px; margin-bottom: 20px; }
 .transport-notes { padding-left: 20px; }
+.walking-route-map { margin: 16px 0; }
+.walking-route-map a { display: block; }
+.walking-route-map img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: 8px; }
+.walking-route-map figcaption { margin-top: 8px; font-size: 14px; color: var(--text-light); text-align: center; }
 .travel-link { display: inline-block; margin: 18px 0; }
 summary { cursor: pointer; padding: 16px; background: var(--cream); border-radius: 8px; color: var(--deep-rose); font-weight: 600; }
 .help-section { text-align: center; }
